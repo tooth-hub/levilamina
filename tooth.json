@@ -1,0 +1,37 @@
+{
+    "format_version": 2,
+    "tooth": "github.com/tooth-hub/levilamina",
+    "version": "0.1.0",
+    "info": {
+        "name": "LeviLamina",
+        "description": "A lightweight, modular and versatile plugin loader for Minecraft Bedrock Server BDS, formerly known as LiteLoaderBDS",
+        "author": "LiteLDev",
+        "tags": []
+    },
+    "commands": {
+        "post_install": [
+            ".\\PeEditor.exe -mn"
+        ]
+    },
+    "dependencies": {
+        "github.com/tooth-hub/bds": "1.20.41",
+        "github.com/tooth-hub/peeditor": "3.3.x",
+        "github.com/tooth-hub/preloader": "1.3.x"
+    },
+    "files": {
+        "place": [
+            {
+                "src": "LeviLamina.dll",
+                "dest": "LeviLamina.dll"
+            },
+            {
+                "src": "LeviLamina.pdb",
+                "dest": "LeviLamina.pdb"
+            }
+        ],
+        "remove": [
+            "bedrock_server_mod.exe",
+            "plugins/LeviLamina/LangPack"
+        ]
+    }
+}
